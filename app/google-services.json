@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "230795254031",
+    "project_id": "chat-project-ff835",
+    "storage_bucket": "chat-project-ff835.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:230795254031:android:e2fab57a4bc779be0ac67a",
+        "android_client_info": {
+          "package_name": "com.example.maa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "230795254031-9tppe88bqmbp1tekic6g2hao89san71r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5B3ZHE6XA_2xe9Kyp8ATNj06wHXSaxb0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "230795254031-9tppe88bqmbp1tekic6g2hao89san71r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

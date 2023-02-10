@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">maa</string>
+    <string name="email">Email</string>
+    <string name="login_to_continue">Login to Continue</string>
+    <string name="welcome_back">Welcome Back !</string>
+    <string name="password">password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="add_image">Add Image</string>
+    <string name="name">Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="already_have_account">Already Have Account</string>
+    <string name="create_new_accoun">Create New Accoun !</string>
+    <string name="select_user">Select User</string>
+    <string name="string_create_new_account">\@string/create_new_account</string>
+    <string name="type_a_message" />
+    <string name="Type_a_message">type a message</string>
+    <string name="online">Online</string>
+</resources>
