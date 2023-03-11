@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/wwwwww"
     android:clipToPadding="false"
     android:overScrollMode="never"
     android:padding="24dp"
@@ -19,7 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="@string/create_new_accoun"
+            android:text="@string/create_new_account"
             android:textColor="@color/primary_text"
             android:textSize="25sp"
             android:textStyle="bold"/>
@@ -43,7 +44,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="@string/add_image"
-                android:textColor="#616161" />
+                android:textColor="@color/material_dynamic_neutral0" />
 <!--              android:textSize="10sp"-->
 <!--              android:textStyle="bold"/>-->
         </FrameLayout>
@@ -54,7 +55,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="50sp"
             android:background="@drawable/background_input"
+            android:drawableLeft="@drawable/baseline_person_24"
+            android:drawablePadding="20dp"
             android:hint="@string/name"
+            android:textColorHint="@color/design_default_color_on_secondary"
             android:imeOptions="actionNext"
             android:importantForAutofill="no"
             android:inputType="text"
@@ -70,7 +74,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="25sp"
             android:background="@drawable/background_input"
+            android:drawableLeft="@drawable/baseline_email_24"
+            android:drawablePadding="20dp"
             android:hint="@string/email"
+            android:textColorHint="@color/design_default_color_on_secondary"
             android:imeOptions="actionNext"
             android:importantForAutofill="no"
             android:inputType="textEmailAddress"
@@ -80,13 +87,17 @@
             android:textColor="@color/primary_text"
             android:textSize="20sp" />
 
+
         <EditText
             android:id="@+id/inputPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20sp"
             android:background="@drawable/background_input"
+            android:drawableLeft="@drawable/password"
+            android:drawablePadding="20dp"
             android:hint="@string/password"
+            android:textColorHint="@color/design_default_color_on_secondary"
             android:imeOptions="actionNext"
             android:importantForAutofill="no"
             android:inputType="textPassword"
@@ -102,10 +113,32 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20sp"
             android:background="@drawable/background_input"
+            android:drawableLeft="@drawable/baseline_cached_24"
+            android:drawablePadding="20dp"
             android:hint="@string/confirm_password"
+            android:textColorHint="@color/design_default_color_on_secondary"
             android:imeOptions="actionNext"
             android:importantForAutofill="no"
             android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:paddingStart="16sp"
+            android:paddingEnd="16sp"
+            android:textColor="@color/primary_text"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/inputPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25sp"
+            android:background="@drawable/background_input"
+            android:drawableLeft="@drawable/phone"
+            android:drawablePadding="20dp"
+            android:hint="Contact number"
+            android:textColorHint="@color/design_default_color_on_secondary"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="textPhonetic"
             android:minHeight="48dp"
             android:paddingStart="16sp"
             android:paddingEnd="16sp"
@@ -141,7 +174,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="@string/already_have_account"
+            android:text="Existing User"
             android:textStyle="bold"
             android:textSize="15sp"
             android:textColor="@color/primary"

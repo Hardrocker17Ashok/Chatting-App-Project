@@ -101,6 +101,7 @@ public class ChatActivity extends BaseActivity {
             try {
               JSONArray tokens=new JSONArray();
               tokens.put(receiverUser.token);
+
               JSONObject data=new JSONObject();
               data.put(Constants.KEY_USER_ID,preferenceManager.getString(Constants.KEY_USER_ID));
               data.put(Constants.KEY_NAME,preferenceManager.getString(Constants.KEY_NAME));
@@ -143,8 +144,9 @@ public class ChatActivity extends BaseActivity {
                     }catch (JSONException e){
                         e.printStackTrace();
                     }
-                    showToast("Notification sent successfully");
-                }else{
+                    showToast("Notification Sent Successfully");
+                }
+                else{
                     showToast("Error: "+response.code());
                 }
             }

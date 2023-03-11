@@ -17,4 +17,6 @@
     <string name="type_a_message" />
     <string name="Type_a_message">type a message</string>
     <string name="online">Online</string>
+    <string name="show_password">Show Password</string>
+    <string name="create_a_new_account">Create a new Account</string>
 </resources>

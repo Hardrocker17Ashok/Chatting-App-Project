@@ -64,6 +64,7 @@ public class SignUpActivity extends AppCompatActivity {
         user.put(Constants.KEY_NAME,binding.inputName.getText().toString());
         user.put(Constants.KEY_EMAIL,binding.inputEmail.getText().toString());
         user.put(Constants.KEY_PASSWORD,binding.inputPassword.getText().toString());
+        user.put(Constants.KEY_MOBILE,binding.inputPhone.getText().toString());
         user.put(Constants.KEY_IMAGE,encodedImage);
         database.collection(Constants.KEY_COLLECTION_USERS)
                 .add(user)
@@ -118,22 +119,25 @@ public class SignUpActivity extends AppCompatActivity {
             return false;
         }
         else if(binding.inputName.getText().toString().trim().isEmpty()) {
-            Toast.makeText(getApplicationContext(),"please enter name ", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(),"please Enter name ", Toast.LENGTH_SHORT).show();
             return false;
         } else if (binding.inputEmail.getText().toString().trim().isEmpty()) {
-            Toast.makeText(getApplicationContext(),"please enter email ", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(),"please Enter email ", Toast.LENGTH_SHORT).show();
             return false;
         } else if (!Patterns.EMAIL_ADDRESS.matcher(binding.inputEmail.getText().toString()).matches()) {
-            Toast.makeText(getApplicationContext(),"enter valid email ", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(),"Enter valid email ", Toast.LENGTH_SHORT).show();
             return false;
         } else if (binding.inputPassword.getText().toString().trim().isEmpty()) {
-            Toast.makeText(getApplicationContext(),"enter password ", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(),"Enter password ", Toast.LENGTH_SHORT).show();
             return false;
         } else if (binding.inputConfirmPassword.getText().toString().trim().isEmpty()) {
-            Toast.makeText(getApplicationContext(),"enter confirm password ", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(),"Enter confirm password ", Toast.LENGTH_SHORT).show();
             return false;
         } else if (!binding.inputPassword.getText().toString().equals(binding.inputConfirmPassword.getText().toString())) {
-            Toast.makeText(getApplicationContext(),"both password should be match ", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(),"Both password should be match ", Toast.LENGTH_SHORT).show();
+            return false;
+        } else if(binding.inputPhone.getText().toString().trim().isEmpty()) {
+            Toast.makeText(getApplicationContext(), "please Enter contact number ", Toast.LENGTH_SHORT).show();
             return false;
         } else {
             return true;

@@ -15,7 +15,7 @@ import java.util.List;
 
 public class ChatAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>{
     private final List<ChatMessage>chatMessages;
-    private   Bitmap receiverProfileImage;
+    private Bitmap receiverProfileImage;
     private final String senderId;
 
     public static final int VIEW_TYPE_SENT=1;

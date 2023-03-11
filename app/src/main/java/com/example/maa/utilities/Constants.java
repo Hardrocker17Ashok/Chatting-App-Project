@@ -7,6 +7,8 @@ public class Constants {
     public static final String KEY_NAME = "name";
     public static final String KEY_EMAIL="email";
     public static final String KEY_PASSWORD="password";
+
+    public static final String KEY_MOBILE="mobile";
     public static final String KEY_PREFERENCE_NAME="chatAppPreference";
     public static final String KEY_IS_SIGNED_IN="isSignedIn";
     public static final String KEY_USER_ID="userId";
@@ -32,7 +34,7 @@ public class Constants {
 
     public static HashMap<String,String> remoteMsgHeaders=null;
     public static HashMap<String,String> getRemoteMsgHeaders() {
-        if (remoteMsgHeaders == null) {
+        if (remoteMsgHeaders == null){
             remoteMsgHeaders = new HashMap<>();
             remoteMsgHeaders.put(
                     REMOTE_MSG_AUTHORIZATION,
